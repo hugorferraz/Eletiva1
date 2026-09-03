@@ -39,6 +39,18 @@
                     echo "<p>Mês: $mes </p>";
                     $tempo = date("d/m/Y H:i:s");
                     echo "<p>Data e Hora: $tempo </p>";
+
+                    $exp = pow($idade, 2);
+                    echo "<p> exponencial: $exp</p>";
+
+                    $valor = rand(1, 10);
+                    echo "<p>Valor aleatório: $valor<p>";
+
+                    $resultado = 10.34 * 2.9;
+                    echo "<p>Resultado: $resultado</p>";
+
+                    $resultado = number_format($resultado, 2, ".", ",");
+                    echo "<p> Resultado formatado: $resultado</p>";
                 }
             }
         ?>
