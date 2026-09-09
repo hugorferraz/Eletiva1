@@ -8,7 +8,7 @@
 </head>
 <body> 
     <div class="container py-3">
-        <h1>Exercício 2 - Funções</h1>
+        <h1>Exercício 2 - Função strtoupper() e strtolower()</h1>
             <form method="post" action="exerc2.php">
             <div class="mb-3">
                 <label for="palavra" class="form-label">Digite uma palavra: </label>
@@ -20,7 +20,7 @@
     
         <?php
             if ($_POST){
-                $palavra = $_POST['palavra'];
+                $palavra = $_POST['palavra'] ?? "";
 
                 if ($palavra != ""){
                     echo "<p> Maiúsculo: " . strtoupper($palavra) . "</p>";

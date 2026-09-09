@@ -8,7 +8,7 @@
 </head>
 <body> 
     <div class="container py-3">
-        <h1>Exercício 3 - Funções</h1>
+        <h1>Exercício 3 - Função str_contains()</h1>
             <form method="post" action="exerc3.php">
             <div class="mb-3">
                 <label for="palavra1" class="form-label">Digite uma palavra: </label>
@@ -24,8 +24,8 @@
     
         <?php
             if ($_POST){
-                $palavra1 = $_POST['palavra1'];
-                $palavra2 = $_POST['palavra2'];
+                $palavra1 = $_POST['palavra1'] ?? "";
+                $palavra2 = $_POST['palavra2'] ?? "";
                 
                 if ($palavra1 != "" && $palavra2 != ""){
                     if (str_contains($palavra1, $palavra2))

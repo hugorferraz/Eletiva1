@@ -8,7 +8,7 @@
 </head>
 <body> 
     <div class="container py-3">
-        <h1>Exercício 1 - Funções</h1>
+        <h1>Exercício 1 - Função strlen()</h1>
             <form method="post" action="exerc1.php">
             <div class="mb-3">
                 <label for="nome" class="form-label">Digite o seu nome: </label>
@@ -19,7 +19,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
         <?php
             if ($_POST){
-                $nome = $_POST['nome'];
+                $nome = $_POST['nome'] ?? "";
 
                 if ($nome != ""){
                     $qtdLetras = strlen($nome);
