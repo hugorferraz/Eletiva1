@@ -31,12 +31,16 @@
                     $qtd = strlen($nome);
                     echo "<p>Qtd de caracteres do Nome: $qtd</p>";
                     echo "<p>Maiscúlo: " . strtoupper($nome) . "</p>";
+
                     $s = str_replace("a", "4", $nome);
                     echo "<p>Substituição do a: $s </p>";
+
                     $dia = date("d");
                     echo "<p>Dia: $dia </p>";
+
                     $mes = date("m");
                     echo "<p>Mês: $mes </p>";
+                    
                     $tempo = date("d/m/Y H:i:s");
                     echo "<p>Data e Hora: $tempo </p>";
 
