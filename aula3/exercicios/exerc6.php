@@ -8,11 +8,11 @@
 </head>
 <body> 
     <div class="container py-3">
-        <h1>Exercício 6 - Função ceil() e floor()</h1>
+        <h1>Exercício 6 - Função ceil(), floor() e round()</h1>
             <form method="post" action="exerc6.php">
             <div class="mb-3">
                 <label for="numero" class="form-label">Digite o número: </label>
-                <input type="number" id="numero" name="numero" class="form-control" required="">
+                <input type="number" step ="any" id="numero" name="numero" class="form-control" required=""> <!-- step="any" permite digitar números decimais com vírgula ou ponto -->
             </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
@@ -24,10 +24,12 @@
                 if ($numero != 0.00){
                     $nFormatCima = ceil($numero);
                     $nFormatBaixo = floor($numero);
+                    $nFormatAuto = round($numero);
 
-                    echo "<p> Valor original: $numero </p>";
-                    echo "<p> Valor arredondado para cima: $nFormatCima </p>";
-                    echo "<p> Valor arredondado para baixo: $nFormatBaixo </p>";
+                    echo "<p> Número original: $numero </p>";
+                    echo "<p> Número arredondado para cima: $nFormatCima </p>";
+                    echo "<p> Número arredondado para baixo: $nFormatBaixo </p>";
+                    echo "<p> Número arredondado normalmente: $nFormatAuto </p>";
                 }
             }
         ?>
