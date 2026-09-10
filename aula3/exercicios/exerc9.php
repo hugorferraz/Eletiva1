@@ -22,13 +22,13 @@
             if ($_POST){
                 $fraseOriginal = $_POST ['frase'] ?? "";
 
-                if ($frase != ""){
+                if ($fraseOriginal != ""){
                     $fraseSemEspacosIniFin = trim($fraseOriginal);
-                    $fraseSemNenhumEspaco = str_replace(' ', '', $fraseSemNenhumEspaco);
+                    $fraseSemNenhumEspaco = str_replace(' ', '', $fraseOriginal);
 
                     echo "<p> Frase original: $fraseOriginal </p>";
-                    echo "<p> Frase sem espaços iniciais e finais $fraseSemEspacosIniFin </p>";
-                    echo "<p> Frase sem nenhum espaço $fraseSemNenhumEspaco </p>";
+                    echo "<p> Frase sem espaços iniciais e finais: $fraseSemEspacosIniFin </p>";
+                    echo "<p> Frase sem nenhum espaço: $fraseSemNenhumEspaco </p>";
                 }
             }
         ?>
