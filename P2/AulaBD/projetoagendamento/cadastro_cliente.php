@@ -74,9 +74,9 @@
                                     $resultado->bindParam(":complemento", $complemento);
 
                                     if ($resultado->execute())
-                                        echo("<p>Cliente inserido com sucesso!</p>");
+                                        echo '<div class="alert alert-success border-0 shadow-sm mb-4" role="alert">Cliente inserido com sucesso!</div>';
                                     else
-                                        echo("<p>Erro ao inserir!</p>");
+                                        echo '<div class="alert alert-danger border-0 shadow-sm mb-4" role="alert">Erro ao inserir o cliente!</div>';
                                 }
                             ?>
                         </div>
