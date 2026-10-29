@@ -15,7 +15,7 @@
             $resultado = $con->query($sql);
             $dados = $resultado->fetchAll();
             foreach ($dados as $d){
-                echo "<p>Nome: ".$d['nome']."</p>";
+                echo "<p>Nome: ".$d['nome']." <a href='consulta.php?id=".$d['id']."'>Consultar</a></p>";
             }
         ?>
         
