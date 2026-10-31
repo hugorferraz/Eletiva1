@@ -18,13 +18,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-white fw-semibold" href="projetoagendamento/Cliente/cadastro_cliente.php">Clientes</a>
+                            <a class="nav-link text-white fw-semibold" href="Cliente/cadastro_cliente.php">Clientes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white fw-semibold" href="projetoagendamento/Servico/cadastro_servico.php">Serviços</a>
+                            <a class="nav-link text-white fw-semibold" href="Servico/cadastro_servico.php">Serviços</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white fw-semibold" href="projetoagendamento/Profissional/cadastro_profissional.php">Profissionais</a>
+                            <a class="nav-link text-white fw-semibold" href="Profissional/cadastro_profissional.php">Profissionais</a>
                         </li>
                     </ul>
                 </div>
@@ -48,7 +48,7 @@
                             <p class="card-text text-muted flex-grow-1">
                                 Cadastre novos clientes com informações de contato e endereço.
                             </p>
-                            <a href="projetoagendamento/Cliente/cadastro_cliente.php" class="btn btn-outline-primary btn-lg fw-semibold mt-3">
+                            <a href="Cliente/cadastro_cliente.php" class="btn btn-outline-primary btn-lg fw-semibold mt-3">
                                 Ir para Cadastro
                             </a>
                         </div>

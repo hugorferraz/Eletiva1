@@ -61,7 +61,7 @@
                                     $numero = $_POST['numero'];
                                     $complemento = $_POST['complemento'];
 
-                                    require_once("conexao.php");
+                                    require_once("..\conexao.php");
                                     $sql = "INSERT INTO clientes (nome, cpf, telefone, email, cep, numerocasa, complemento)
                                             VALUES (:nome, :cpf, :telefone, :email, :cep, :numero, :complemento)";
                                     $resultado = $con->prepare($sql);
