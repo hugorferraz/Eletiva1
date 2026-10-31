@@ -48,7 +48,7 @@
                                     $funcao = $_POST['funcao'];
                                     $empresa = $_POST['empresa'];
 
-                                    require_once("conexao.php");
+                                    require_once("..\conexao.php");
                                     $sql = "INSERT INTO profissionais (nome, cpf, email, funcao, empresa)
                                             VALUES (:nome, :cpf, :email, :funcao, :empresa)";
                                     $resultado = $con->prepare($sql);

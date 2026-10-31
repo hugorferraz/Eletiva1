@@ -57,7 +57,7 @@
                                     $tempo = $_POST['tempo'];
                                     $ativo = $_POST['ativo'];
 
-                                    require_once("conexao.php");
+                                    require_once("..\conexao.php");
                                     $sql = "INSERT INTO servicos (nome, descricao, valor, tempoduracao, ativo)
                                             VALUES (:nome, :descricao, :valor, :tempo, :ativo)";
                                     $resultado = $con->prepare($sql);
