@@ -8,29 +8,6 @@
     </head>
     <body class="bg-light"> 
 
-        <!-- BARRA DE NAVEGAÇÃO (NAVBAR) -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm mb-4">
-            <div class="container">
-                <a class="navbar-brand fw-bold" href="index.php">Sistema de Cadastro</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link text-white fw-semibold" href="Cliente/cadastro_cliente.php">Clientes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white fw-semibold" href="Servico/cadastro_servico.php">Serviços</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white fw-semibold" href="Profissional/cadastro_profissional.php">Profissionais</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
         <!-- CONTEÚDO PRINCIPAL -->
         <div class="container py-4">
             <div class="text-center mb-5">
@@ -63,7 +40,7 @@
                             <p class="card-text text-muted flex-grow-1">
                                 Cadastre e gerencie os serviços prestados, seus valores e duração.
                             </p>
-                            <a href="projetoagendamento/cadastro_servico.php" class="btn btn-outline-primary btn-lg fw-semibold mt-3">
+                            <a href="Servico/cadastro_servico.php" class="btn btn-outline-primary btn-lg fw-semibold mt-3">
                                 Ir para Cadastro
                             </a>
                         </div>
@@ -78,7 +55,7 @@
                             <p class="card-text text-muted flex-grow-1">
                                 Cadastre a equipe de profissionais, suas funções e empresas associadas.
                             </p>
-                            <a href="projetoagendamento/cadastro_profissional.php" class="btn btn-outline-primary btn-lg fw-semibold mt-3">
+                            <a href="Profissional/cadastro_profissional.php" class="btn btn-outline-primary btn-lg fw-semibold mt-3">
                                 Ir para Cadastro
                             </a>
                         </div>
