@@ -12,7 +12,10 @@
                 <div class="col-md-8 col-lg-6">
                     <div class="card shadow-sm border-0 rounded-3">
                         <div class="card-body p-4">
-                            <h2 class="card-title fw-bold text-primary mb-4 text-center">Cadastro de Serviço</h2>
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <h2 class="card-title fw-bold text-primary mb-4 text-center">Cadastro de Serviço</h2>
+                                <a href="../index.php" class="btn btn-outline-secondary btn-sm">Voltar</a>
+                            </div>
                             
                             <form method="post">
                                 <div class="mb-3">
