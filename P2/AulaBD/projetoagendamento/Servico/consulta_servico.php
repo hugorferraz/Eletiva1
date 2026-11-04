@@ -52,16 +52,16 @@
                             <input value="<?= htmlspecialchars($dados['valor']) ?>" type="number" step="0.01" id="valor" name="valor" class="form-control" required>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label for="tempo" class="form-label fw-semibold">Tempo de Duração (Horas)</label>
-                            <input value="<?= htmlspecialchars($dados['tempoduracao']) ?>" type="number" id="tempo" name="tempo" class="form-control" required>
+                            <label for="tempoduracao" class="form-label fw-semibold">Tempo de Duração (Horas)</label>
+                            <input value="<?= htmlspecialchars($dados['tempoduracao']) ?>" type="number" id="tempoduracao" name="tempoduracao" class="form-control" required>
                         </div>
                     </div>
 
                     <div class="mb-3">
                         <label for="ativo" class="form-label fw-semibold">Status do Serviço</label>
-                        <select value="<?= htmlspecialchars($dados['ativo']) ?>" id="ativo" name="ativo" class="form-select" required>
-                            <option value="1" selected>Ativo</option>
-                            <option value="0">Inativo</option>
+                        <select id="ativo" name="ativo" class="form-select" required>
+                            <option option value="1" <?= ($dados['ativo'] == 1) ? 'selected' : '' ?>>Ativo</option>
+                            <option option value="0" <?= ($dados['ativo'] == 0) ? 'selected' : '' ?>>Inativo</option>
                         </select>
                     </div>  
 
